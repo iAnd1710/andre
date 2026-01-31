@@ -86,7 +86,7 @@ const links = [
 
 <template>
   <div
-    class="min-h-screen relative flex flex-col items-center bg-black overflow-hidden font-archivo"
+    class="min-h-screen relative flex flex-col items-center bg-black overflow-hidden font-archivo mesh-gradient"
   >
     <!-- Star Field -->
     <div class="fixed inset-0 pointer-events-none z-0">
@@ -105,113 +105,141 @@ const links = [
     </div>
 
     <!-- Tech Grid Overlay -->
-    <div class="fixed inset-0 pointer-events-none z-0 grid-bg opacity-20"></div>
+    <div class="fixed inset-0 pointer-events-none z-0 grid-bg opacity-10"></div>
     <div class="scanline"></div>
+    <div
+      class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80 pointer-events-none"
+    ></div>
 
     <main
       class="relative z-10 w-full max-w-[600px] flex flex-col items-center px-6 py-12"
     >
       <!-- Profile Section -->
       <div
-        class="text-center mb-10 w-full animate-in fade-in slide-in-from-bottom-4 duration-1000"
+        class="text-center mb-12 w-full animate-in fade-in slide-in-from-bottom-8 duration-1000 ease-out"
       >
-        <div class="relative inline-block mb-6">
+        <div class="relative inline-block mb-8">
+          <!-- Multi-layered glowing rings -->
           <div
-            class="absolute -inset-2 bg-primary/20 rounded-full blur-xl animate-pulse-slow"
+            class="absolute -inset-4 bg-primary/10 rounded-full blur-2xl animate-pulse-slow"
           ></div>
           <div
-            class="relative w-28 h-28 rounded-full p-[2px] bg-gradient-to-b from-primary to-transparent shadow-[0_0_20px_rgba(0,242,255,0.3)]"
+            class="absolute -inset-1 bg-gradient-to-tr from-primary via-secondary to-accent rounded-full opacity-50 animate-spin-slow"
+          ></div>
+
+          <div
+            class="relative w-32 h-32 rounded-full p-[3px] bg-zinc-900 shadow-[0_0_30px_rgba(255,87,34,0.2)]"
           >
             <div
-              class="w-full h-full rounded-full border border-white/10 overflow-hidden bg-zinc-900 flex items-center justify-center"
+              class="w-full h-full rounded-full border border-white/10 overflow-hidden bg-zinc-950 flex items-center justify-center relative group"
             >
               <img
                 src="https://api.dicebear.com/7.x/avataaars/svg?seed=Gustavo"
                 alt="Profile"
-                class="w-full h-full object-cover"
+                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
               />
+              <div
+                class="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors"
+              ></div>
             </div>
           </div>
+
+          <!-- Decorative tech elements -->
+          <div
+            class="absolute -top-2 -right-2 w-6 h-6 border-t-2 border-r-2 border-primary/40 rounded-tr-md"
+          ></div>
+          <div
+            class="absolute -bottom-2 -left-2 w-6 h-6 border-b-2 border-l-2 border-secondary/40 rounded-bl-md"
+          ></div>
         </div>
 
         <h1
-          class="text-4xl md:text-5xl font-bold mb-3 tracking-tighter text-white uppercase italic"
+          class="text-5xl md:text-6xl font-black mb-4 tracking-tight text-white uppercase italic"
         >
-          André
+          <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-secondary"
+            >André</span
+          >
         </h1>
 
         <div
-          class="flex flex-col gap-1 items-center font-mono text-xs text-zinc-400"
+          class="flex flex-col gap-2 items-center font-mono text-xs tracking-widest text-zinc-400 uppercase"
         >
-          <p>Bacharel Eng. Mecatrônica</p>
-          <p>Pós Graduado em Data Analytics</p>
+          <div class="flex items-center gap-2">
+            <div class="w-1 h-1 bg-primary rounded-full animate-ping"></div>
+            <p>Bacharel Eng. Mecatrônica</p>
+          </div>
+          <p class="opacity-60">Pós Graduado em Data Analytics</p>
         </div>
       </div>
 
       <!-- Links Section -->
       <div class="w-full space-y-4">
         <a
-          v-for="link in links"
+          v-for="(link, index) in links"
           :key="link.title"
           :href="link.href"
           target="_blank"
           rel="noopener noreferrer"
-          class="glass-card w-full p-5 flex items-start group relative transition-all hover:scale-[1.01] rounded-lg border-white/5 bg-white/5"
+          class="glass-effect w-full p-6 flex items-start group relative transition-all hover:translate-y-[-4px] rounded-xl overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-700"
+          :style="{ 'animation-delay': `${index * 100}ms` }"
         >
-          <!-- Accent Glow background -->
+          <!-- Hover Gradient Glow -->
           <div
-            class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"
+            class="absolute inset-0 bg-gradient-to-r from-primary/10 via-accent/5 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
           ></div>
 
-          <div class="relative z-10 mr-5 mt-1">
+          <div class="relative z-10 mr-6">
             <div
               :class="[
-                'rounded border border-white/10 flex items-center justify-center w-[46px] h-[46px] overflow-hidden transition-colors',
+                'rounded-lg border border-white/10 flex items-center justify-center w-[52px] h-[52px] overflow-hidden transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-[0_0_15px_rgba(255,87,34,0.3)]',
                 link.image
-                  ? ''
-                  : 'p-3 bg-zinc-800/50 text-white group-hover:text-primary',
+                  ? 'bg-zinc-900'
+                  : 'bg-zinc-800/50 text-white group-hover:text-primary',
               ]"
             >
               <img
                 v-if="link.image"
                 :src="link.image"
-                class="w-full h-full object-cover"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <component v-else :is="link.icon" :size="22" />
+              <component v-else :is="link.icon" :size="24" />
             </div>
           </div>
 
           <div class="relative z-10 flex-1">
-            <div class="flex items-center gap-2 mb-1">
+            <div class="flex items-center gap-3 mb-1.5">
               <h3
-                class="text-sm font-bold tracking-widest text-white uppercase group-hover:text-primary transition-colors"
+                class="text-base font-bold tracking-wider text-zinc-400 uppercase group-hover:text-white transition-colors"
               >
                 {{ link.title }}
               </h3>
               <span
                 v-if="link.badge"
-                class="bg-primary/20 text-[10px] text-primary px-2 py-0.5 rounded-sm font-bold border border-primary/30 tracking-wide"
+                class="bg-primary text-[9px] text-white px-2 py-0.5 rounded-full font-black border border-white/20 tracking-tighter animate-pulse"
               >
                 {{ link.badge }}
               </span>
             </div>
-            <p class="text-xs text-zinc-500 leading-relaxed font-mono">
+            <p
+              class="text-xs text-zinc-400 leading-relaxed font-mono group-hover:text-zinc-300 transition-colors"
+            >
               {{ link.description }}
             </p>
           </div>
 
           <div
-            class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all translate-x-1 group-hover:translate-x-0"
+            class="absolute right-6 top-1/2 -translate-y-1/2 opacity-20 group-hover:opacity-100 transition-all translate-x-2 group-hover:translate-x-0"
           >
-            <ExternalLink :size="14" class="text-primary" />
+            <ExternalLink :size="18" class="text-primary" />
           </div>
 
-          <!-- Decorative edges (Image 2 style) -->
+          <!-- Decorative tech corners -->
           <div
-            class="absolute top-0 right-0 w-8 h-8 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity"
+            class="absolute top-0 right-0 w-4 h-4 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity"
           >
-            <div class="absolute top-0 right-0 w-[1px] h-3 bg-primary/40"></div>
-            <div class="absolute top-0 right-0 w-3 h-[1px] bg-primary/40"></div>
+            <div class="absolute top-2 right-2 w-[1px] h-2 bg-primary"></div>
+            <div class="absolute top-2 right-2 w-2 h-[1px] bg-primary"></div>
           </div>
         </a>
       </div>
@@ -233,6 +261,19 @@ const links = [
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Space+Mono&display=swap");
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
 
 .font-mono {
   font-family: "Space Mono", monospace;

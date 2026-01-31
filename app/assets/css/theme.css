@@ -6,28 +6,28 @@
   prefersdark: true;
   color-scheme: 'dark';
 
-  --color-base-100: #121212; /* Carvão Técnico */
-  --color-base-200: #1c1c1c;
-  --color-base-300: #2d2d2d;
-  --color-base-content: #e2e8f0;
+  --color-base-100: #08080a; /* Deep Space Black */
+  --color-base-200: #0f1014;
+  --color-base-300: #1a1b21;
+  --color-base-content: #f8fafc;
 
   --color-primary: #ff5722; /* Laranja Mars */
   --color-primary-content: #ffffff;
-  --color-secondary: #9e9e9e; /* Cinza Industrial */
-  --color-secondary-content: #121212;
-  --color-accent: #4508f9;
+  --color-secondary: #00f2ff; /* Cyber Blue */
+  --color-secondary-content: #08080a;
+  --color-accent: #bc13fe; /* Neon Purple */
   --color-accent-content: #ffffff;
 
-  --color-neutral: #22314f;
-  --color-neutral-content: #e2e8f0;
+  --color-neutral: #1e293b;
+  --color-neutral-content: #f8fafc;
 
-  --color-background: #0a0b1e;
-  --color-surface: rgba(255, 255, 255, 0.03);
-  --color-border: rgba(255, 255, 255, 0.1);
+  --color-background: #08080a;
+  --color-surface: rgba(255, 255, 255, 0.05);
+  --color-border: rgba(255, 255, 255, 0.08);
 
-  --radius-selector: 0.4rem;
-  --radius-field: 0.4rem;
-  --radius-box: 0.8rem;
+  --radius-selector: 0.5rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
 }
 
 @layer base {
@@ -52,17 +52,27 @@
 }
 
 @utility glass-effect {
-  background: color-mix(in srgb, var(--color-base-200), transparent 40%);
-  border: 1px solid
-    color-mix(in srgb, var(--color-base-content), transparent 90%);
-  backdrop-filter: blur(12px);
+  background: rgba(15, 16, 20, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px) saturate(180%);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+@utility mesh-gradient {
+  background-color: #08080a;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(12, 100%, 57%, 0.15) 0px, transparent 50%),
+    radial-gradient(at 50% 0%, hsla(180, 100%, 50%, 0.12) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(280, 100%, 54%, 0.15) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, hsla(12, 100%, 57%, 0.05) 0px, transparent 50%);
 }
 
 @utility brand-gradient {
   background: linear-gradient(
     135deg,
     var(--color-primary),
-    var(--color-secondary)
+    var(--color-secondary),
+    var(--color-accent)
   );
 }
 
