@@ -43,15 +43,10 @@
           </div>
         </header>
 
-        <div class="mt-8">
-          <a
-            href="https://apptime.ai"
-            target="_blank"
-            class="btn btn-primary btn-lg rounded-field px-8 font-bold text-lg hover:-translate-y-0.5 transition-transform brand-gradient border-none text-primary-content shadow-[0_12px_35px_rgba(255,0,174,0.35)]"
-          >
-            Get Started
-            <span class="text-xl">→</span>
-          </a>
+        <div class="mt-8 flex flex-col gap-4">
+          <a href="#" class="btn btn-primary btn-lg rounded-field w-full font-bold text-lg hover:-translate-y-0.5 transition-all brand-gradient border-none text-primary-content shadow-lg">Nosso Website</a>
+          <a href="#" class="btn btn-outline btn-lg rounded-field w-full font-bold text-lg hover:-translate-y-0.5 transition-all border-base-content/20 text-base-content hover:bg-primary hover:border-primary hover:text-white">Instagram</a>
+          <a href="#" class="btn btn-outline btn-lg rounded-field w-full font-bold text-lg hover:-translate-y-0.5 transition-all border-base-content/20 text-base-content hover:bg-secondary hover:border-secondary hover:text-white">WhatsApp</a>
         </div>
 
         <footer class="mt-8 pt-8 border-t border-base-content/10">
