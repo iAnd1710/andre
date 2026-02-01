@@ -134,7 +134,7 @@ const links = [
               class="w-full h-full rounded-full border border-white/10 overflow-hidden bg-zinc-950 flex items-center justify-center relative group"
             >
               <img
-                src="https://api.dicebear.com/7.x/avataaars/svg?seed=Gustavo"
+                src="https://storage.googleapis.com/storage.apptime.app/public/apps/kICCQZJzX7ng71G8508x/storage/libraries/default/R202rZciuvTmpRKSfbyt/imgHd.jpeg"
                 alt="Profile"
                 class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
               />
