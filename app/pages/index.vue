@@ -41,7 +41,7 @@ const links = [
     title: "APPTIME",
     description:
       "Tudo em um só lugar para aprender e criar com IA + Experts. 🚀",
-    href: "https://appti.me",
+    href: "https://appti.me?utm_source=andre",
     badge: "ESTE SITE FOI FEITO AQUI",
     accentColor: "#ff5722",
   },
@@ -51,7 +51,7 @@ const links = [
       "https://storage.googleapis.com/storage.apptime.app/public/apps/kICCQZJzX7ng71G8508x/storage/libraries/default/FIDd5Q7xa5zZ8KWLHPLj/imgHd.png",
     title: "FORUS",
     description: "Sua jornada, do seu jeito 💫",
-    href: "#",
+    href: "https://forus.app/?utm_source=andre",
     accentColor: "#9e9e9e",
   },
   {
@@ -60,7 +60,7 @@ const links = [
       "https://storage.googleapis.com/storage.apptime.app/public/apps/kICCQZJzX7ng71G8508x/storage/libraries/default/XRnyIWYr7xKX2mQn5kzH/imgHd.jpeg",
     title: "LINKEDIN",
     description: "",
-    href: "#",
+    href: "https://www.linkedin.com/in/andre-lima-inacio/",
     accentColor: "#ff5722",
   },
   {
@@ -69,7 +69,7 @@ const links = [
       "https://storage.googleapis.com/storage.apptime.app/public/apps/kICCQZJzX7ng71G8508x/storage/libraries/default/s6a8Kl2NJusxsgUCPeSs/imgHd.jpeg",
     title: "GITHUB",
     description: "",
-    href: "#",
+    href: "https://github.com/iAnd1710",
     accentColor: "#9e9e9e",
   },
   {
@@ -78,7 +78,7 @@ const links = [
       "https://storage.googleapis.com/storage.apptime.app/public/apps/kICCQZJzX7ng71G8508x/storage/libraries/default/hUwVC2UyO8HEv92XhtmP/imgHd.jpeg",
     title: "INSTAGRAM",
     description: "",
-    href: "#",
+    href: "https://www.instagram.com/andre.limaa_/",
     accentColor: "#ff5722",
   },
 ];
