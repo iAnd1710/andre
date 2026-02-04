@@ -10,35 +10,35 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: {
-        lang: 'en',
+        lang: 'pt-BR',
         'data-theme': 'apptime',
       },
-      title: 'Apptime Starter | Starter Project',
+      title: 'André | Links & Projects',
       meta: [
         { charset: 'UTF-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
         {
           name: 'description',
           content:
-            'Your modern foundation for high-performance web applications.',
+            'Meus links, projetos e um pouco do que eu ando criando entre engenharia e dados. 🚀',
         },
         {
           name: 'keywords',
           content:
-            'Apptime, Nuxt.js, TypeScript, Tailwind CSS, Starter Project',
+            'André, Engenharia Mecatrônica, Data Analytics, Portfólio, Nuxt.js, Vue.js',
         },
-        { property: 'og:title', content: 'Apptime Starter | Starter Project' },
+        { property: 'og:title', content: 'André | Links & Projects' },
         {
           property: 'og:description',
           content:
-            'Your modern foundation for high-performance web applications.',
+            'Meus links, projetos e um pouco do que eu ando criando entre engenharia e dados. 🚀',
         },
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'Apptime Starter | Starter Project' },
+        { name: 'twitter:title', content: 'André | Links & Projects' },
         {
           name: 'twitter:description',
           content:
-            'Your modern foundation for high-performance web applications.',
+            'Meus links, projetos e um pouco do que eu ando criando entre engenharia e dados. 🚀',
         },
       ],
       link: [
