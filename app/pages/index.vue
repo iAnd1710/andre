@@ -4,7 +4,7 @@ import { ArrowUpRight, BookOpenText, Github, Instagram, Landmark, Linkedin, Spar
 const profileImage = "https://storage.googleapis.com/storage.apptime.app/public/artifacts/fXsPxaoXOmJf50SoWRAw/imgHd.png";
 
 const projects = [
-  { title: "Apptime", description: "Soluções em IA para tirar ideias do papel.", href: "https://apptime.com.br/", image: "https://storage.googleapis.com/storage.apptime.app/public/artifacts/qzmYBLPDFygkgz6ymYTf/imgHd.png", icon: undefined, status: undefined },
+  { title: "Apptime", description: "Soluções em IA para tirar ideias do papel.", href: "https://apptime.ai/", image: "https://storage.googleapis.com/storage.apptime.app/public/artifacts/qzmYBLPDFygkgz6ymYTf/imgHd.png", icon: undefined, status: undefined },
   { title: "Forus Flow", description: "Um lugar para escrever e pensar com IA.", href: "https://forusflow.com/", image: "https://storage.googleapis.com/storage.apptime.app/public/artifacts/STYLPrrEQb3eH4t3xOEZ/imgHd.png", icon: undefined, status: undefined },
   { title: "Cathedra", description: "Um projeto sobre catolicismo, em construção.", href: undefined, image: undefined, icon: Landmark, status: "Em construção" },
 ];
