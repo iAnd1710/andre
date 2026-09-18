@@ -13,32 +13,32 @@ export default defineNuxtConfig({
         lang: 'pt-BR',
         'data-theme': 'apptime',
       },
-      title: 'André | Links & Projects',
+      title: 'André | Projetos e links',
       meta: [
         { charset: 'UTF-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
         {
           name: 'description',
           content:
-            'Meus links, projetos e um pouco do que eu ando criando entre engenharia e dados. 🚀',
+            'Projetos, ideias e links de André — engenharia, dados e inteligência artificial.',
         },
         {
           name: 'keywords',
           content:
-            'André, Engenharia Mecatrônica, Data Analytics, Portfólio, Nuxt.js, Vue.js',
+            'André, Engenharia Mecatrônica, Data Analytics, Inteligência Artificial, Apptime, Forus Flow',
         },
-        { property: 'og:title', content: 'André | Links & Projects' },
+        { property: 'og:title', content: 'André | Projetos e links' },
         {
           property: 'og:description',
           content:
-            'Meus links, projetos e um pouco do que eu ando criando entre engenharia e dados. 🚀',
+            'Projetos, ideias e links de André — engenharia, dados e inteligência artificial.',
         },
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'André | Links & Projects' },
+        { name: 'twitter:title', content: 'André | Projetos e links' },
         {
           name: 'twitter:description',
           content:
-            'Meus links, projetos e um pouco do que eu ando criando entre engenharia e dados. 🚀',
+            'Projetos, ideias e links de André — engenharia, dados e inteligência artificial.',
         },
       ],
       link: [
