@@ -4,9 +4,9 @@ import { ArrowUpRight, BookOpenText, Github, Instagram, Landmark, Linkedin, Spar
 const profileImage = "https://storage.googleapis.com/storage.apptime.app/public/artifacts/fXsPxaoXOmJf50SoWRAw/imgHd.png";
 
 const projects = [
-  { title: "Apptime", description: "Soluções em IA para tirar ideias do papel.", href: "https://apptime.ai/", image: "https://storage.googleapis.com/storage.apptime.app/public/artifacts/qzmYBLPDFygkgz6ymYTf/imgHd.png", icon: undefined, status: undefined },
-  { title: "Forus Flow", description: "Um lugar para escrever e pensar com IA.", href: "https://forusflow.com/", image: "https://storage.googleapis.com/storage.apptime.app/public/artifacts/STYLPrrEQb3eH4t3xOEZ/imgHd.png", icon: undefined, status: undefined },
-  { title: "Cathedra", description: "Um projeto sobre catolicismo, em construção.", href: undefined, image: undefined, icon: Landmark, status: "Em construção" },
+  { title: "Apptime", description: "Soluções em IA para tirar ideias do papel.", href: "https://apptime.ai/?utm_source=andre", image: "https://storage.googleapis.com/storage.apptime.app/public/artifacts/qzmYBLPDFygkgz6ymYTf/imgHd.png", icon: undefined, status: undefined },
+  { title: "Cathedra", description: "Os fundamentos da fé católica, de forma clara.", href: "https://cathedra.appti.me/?utm_source=andre", image: "https://storage.googleapis.com/storage.apptime.app/public/artifacts/FDP96qto1qDR4VnVAtgT/imgHd.png", icon: undefined, status: undefined },
+  { title: "Forus Flow", description: "Um lugar para escrever e pensar com IA.", href: "https://forusflow.com/?utm_source=andre", image: "https://storage.googleapis.com/storage.apptime.app/public/artifacts/STYLPrrEQb3eH4t3xOEZ/imgHd.png", icon: undefined, status: undefined },
 ];
 
 const socials = [
@@ -95,13 +95,13 @@ a.project-card:hover, a.project-card:focus-visible { border-color: var(--line); 
 .project-copy { display: grid; min-width: 0; gap: .38rem; align-content: center; }
 .project-title-row { display: flex; min-width: 0; flex-wrap: wrap; align-items: center; gap: .35rem .45rem; }
 .project-title { color: var(--ivory); font-family: "Playfair Display", Georgia, serif; font-size: 1.3rem; font-weight: 500; line-height: 1.05; }
-.project-description { overflow: hidden; color: var(--muted); font-family: "DM Sans", sans-serif; font-size: .75rem; line-height: 1.25; text-overflow: ellipsis; white-space: nowrap; }
+.project-description { overflow: hidden; color: var(--muted); font-family: "DM Sans", sans-serif; font-size: .7rem; line-height: 1.25; text-overflow: ellipsis; white-space: nowrap; }
 .project-status { display: inline-flex; flex: 0 0 auto; min-height: 1rem; align-items: center; padding: 0 .32rem; border: 1px solid rgba(215,181,112,.32); border-radius: 999px; background: rgba(215,181,112,.07); color: var(--gold); font-family: "DM Mono", monospace; font-size: .44rem; letter-spacing: .07em; line-height: 1; text-transform: uppercase; white-space: nowrap; }
 .project-action { display: grid; place-items: center; color: var(--gold); }
 .socials { display: flex; justify-content: center; gap: clamp(1.1rem,5vw,2.2rem); margin-top: clamp(2.6rem,7vh,4rem); }
 .social-link { display: inline-flex; align-items: center; gap: .42rem; color: rgba(243,238,228,.78); font-family: "DM Sans", sans-serif; font-size: .75rem; text-decoration: none; transition: color 180ms ease, transform 180ms ease; }
 .social-link:hover, .social-link:focus-visible { color: var(--gold); outline: none; transform: translateY(-2px); }
 .footer-note { display: flex; margin-top: auto; padding-top: 3.6rem; align-items: center; justify-content: center; gap: .55rem; color: rgba(222,184,116,.84); font-family: "DM Mono", monospace; font-size: .57rem; letter-spacing: .16em; text-transform: uppercase; }
-@media (max-width: 34rem) { .page-shell { padding: 2.7rem 1rem 1.7rem; } .link-hub { min-height: calc(100svh - 4.4rem); } .portrait-frame { width: 6.75rem; height: 6.75rem; } .eyebrow { max-width: 17rem; } .project-list { margin-top: 2.7rem; } .project-card { grid-template-columns: 2.9rem minmax(0,1fr) 1.3rem; gap: .75rem; padding: .72rem .8rem; } .project-mark { width: 2.9rem; height: 2.9rem; } .project-title { font-size: 1.16rem; } .project-description { font-size: .69rem; } .socials { gap: 1rem; } .social-link span { display: none; } .social-link { width: 2.4rem; height: 2.4rem; justify-content: center; border: 1px solid rgba(243,238,228,.15); border-radius: 999px; background: rgba(3,6,9,.38); } .footer-note { padding-top: 2.4rem; } }
+@media (max-width: 34rem) { .page-shell { padding: 2.7rem 1rem 1.7rem; } .link-hub { min-height: calc(100svh - 4.4rem); } .portrait-frame { width: 6.75rem; height: 6.75rem; } .eyebrow { max-width: 17rem; } .project-list { margin-top: 2.7rem; } .project-card { grid-template-columns: 2.9rem minmax(0,1fr) 1.3rem; gap: .75rem; padding: .72rem .8rem; } .project-mark { width: 2.9rem; height: 2.9rem; } .project-title { font-size: 1.16rem; } .project-description { font-size: .64rem; } .socials { gap: 1rem; } .social-link span { display: none; } .social-link { width: 2.4rem; height: 2.4rem; justify-content: center; border: 1px solid rgba(243,238,228,.15); border-radius: 999px; background: rgba(3,6,9,.38); } .footer-note { padding-top: 2.4rem; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
 </style>
