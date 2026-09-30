@@ -13,32 +13,32 @@ export default defineNuxtConfig({
         lang: 'pt-BR',
         'data-theme': 'apptime',
       },
-      title: 'André | Projetos e links',
+      title: 'André | Plataformas de IA para negócios',
       meta: [
         { charset: 'UTF-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
         {
           name: 'description',
           content:
-            'Projetos, ideias e links de André — engenharia, dados e inteligência artificial.',
+            'Criamos plataformas de inteligência artificial com a sua marca, pensadas para aproximar negócios de seus clientes e crescer.',
         },
         {
           name: 'keywords',
           content:
-            'André, Engenharia Mecatrônica, Data Analytics, Inteligência Artificial, Apptime, Forus Flow',
+            'André, Engenharia Mecatrônica, Data Analytics, plataformas de IA, Apptime',
         },
-        { property: 'og:title', content: 'André | Projetos e links' },
+        { property: 'og:title', content: 'André | Plataformas de IA para negócios' },
         {
           property: 'og:description',
           content:
-            'Projetos, ideias e links de André — engenharia, dados e inteligência artificial.',
+            'Criamos plataformas de inteligência artificial com a sua marca, pensadas para aproximar negócios de seus clientes e crescer.',
         },
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'André | Projetos e links' },
+        { name: 'twitter:title', content: 'André | Plataformas de IA para negócios' },
         {
           name: 'twitter:description',
           content:
-            'Projetos, ideias e links de André — engenharia, dados e inteligência artificial.',
+            'Criamos plataformas de inteligência artificial com a sua marca, pensadas para aproximar negócios de seus clientes e crescer.',
         },
       ],
       link: [

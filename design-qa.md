@@ -1,41 +1,26 @@
-**Findings**
+# Design QA
 
-- [P1] Browser-rendered visual verification is unavailable.
-  Location: full page.
-  Evidence: Bun and Node.js are not installed on the host. `docker compose run --rm app bun run build` could not connect to Docker because the Docker daemon is not running.
-  Impact: the Nuxt build, responsive behavior, working external links, and visual match to the selected reference cannot yet be verified in a browser.
-  Fix: start Docker Desktop, then run the compose build and open the site at the configured local port for desktop and mobile checks.
+## Resultado
 
-**Open Questions**
+final result: passed
 
-- Copy for the small profile line and the three project descriptions is a working draft and can be refined after the visual pass.
+## Verificações
 
-**Implementation Checklist**
+- Comparação visual feita no navegador em desktop e em 390 × 844 px no celular.
+- Cabeçalho removido a pedido; a página começa diretamente pela proposta principal.
+- Atalho “Além do trabalho” e monograma “A” removidos, com o espaço vertical do hero ajustado.
+- Numeração dos projetos removida; logos e textos reposicionados à esquerda.
+- Redes sociais centralizadas no rodapé e borda superior removida.
+- Hero e espaçamentos ajustados para manter a seção “Sobre” visível na primeira tela, com respiro antes dos projetos; ícone do CTA e etiqueta superior removidos.
+- Ajustada a sobreposição inicial do hero causada pela classe global `.hero` do DaisyUI; o conteúdo agora flui em coluna e fica alinhado à esquerda.
+- Descrições dos projetos quebram em até duas linhas no celular, sem corte; não há rolagem horizontal.
+- Foto pessoal permanece discreta (78 px no desktop, 64 px no celular).
+- Build de produção concluído com `docker compose exec -T app bun run build`.
+- Links do Tally usam `utm_source=andre`; links dos quatro projetos também usam esse UTM; links sociais não usam UTM.
+- Foto e logos carregaram corretamente. Após recarregar a página final, não houve erro atual de renderização; houve apenas mensagens antigas de HMR durante a recriação do arquivo, antes do reload bem-sucedido.
 
-1. Start the Docker daemon.
-2. Run `docker compose up --build` and capture the page at desktop and mobile widths.
-3. Compare the render to the selected reference image, test the Apptime, Forus Flow and social links, then resolve any P0–P2 visual findings.
+## Referência visual
 
-**Follow-up Polish**
+Direção selecionada: `/Users/andre/.codex/generated_images/01a0b2b5-abc6-7ed2-b8c2-16a30b05d640/exec-05ab8c88-b8de-4c95-a5db-dbe5e7d719d7.png`
 
-- Fine-tune background crop and project-card opacity against the browser render.
-
-Source visual truth path: `/Users/andre/.codex/generated_images/01a0b2b5-abc6-7ed2-b8c2-16a30b05d640/exec-91827e56-e8f3-4aef-a6df-ec6e18ee3c3a.png`
-
-Implementation screenshot path: unavailable — local runtime not running.
-
-Viewport: intended desktop reference 1536 × 1024; implementation not captured.
-
-State: initial page, no interaction state captured.
-
-Full-view comparison evidence: unavailable because no browser-rendered implementation could be captured.
-
-Focused region comparison evidence: unavailable because no browser-rendered implementation could be captured.
-
-Comparison history: no visual-comparison iteration was possible.
-
-Primary interactions tested: unavailable because no local runtime was available.
-
-Console errors checked: unavailable because no local runtime was available.
-
-final result: blocked
+Implementação verificada em `http://localhost:3001/`. O servidor Docker permanece ativo para revisão e iteração.
