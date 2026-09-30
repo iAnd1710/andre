@@ -13,32 +13,34 @@ export default defineNuxtConfig({
         lang: 'pt-BR',
         'data-theme': 'apptime',
       },
-      title: 'André | Plataformas de IA para negócios',
+      title: 'André · Transformo ideias em produtos',
       meta: [
         { charset: 'UTF-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
         {
           name: 'description',
           content:
-            'Criamos plataformas de inteligência artificial com a sua marca, pensadas para aproximar negócios de seus clientes e crescer.',
+            'Na Apptime, criamos produtos de IA para ajudar negócios a crescer. Fora do trabalho, sigo movido por conhecimento, fé e boas experiências.',
         },
         {
           name: 'keywords',
           content:
             'André, Engenharia Mecatrônica, Data Analytics, plataformas de IA, Apptime',
         },
-        { property: 'og:title', content: 'André | Plataformas de IA para negócios' },
+        { property: 'og:title', content: 'André · Transformo ideias em produtos' },
         {
           property: 'og:description',
           content:
-            'Criamos plataformas de inteligência artificial com a sua marca, pensadas para aproximar negócios de seus clientes e crescer.',
+            'Na Apptime, criamos produtos de IA para ajudar negócios a crescer. Fora do trabalho, sigo movido por conhecimento, fé e boas experiências.',
         },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://andre.appti.me/' },
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'André | Plataformas de IA para negócios' },
+        { name: 'twitter:title', content: 'André · Transformo ideias em produtos' },
         {
           name: 'twitter:description',
           content:
-            'Criamos plataformas de inteligência artificial com a sua marca, pensadas para aproximar negócios de seus clientes e crescer.',
+            'Na Apptime, criamos produtos de IA para ajudar negócios a crescer. Fora do trabalho, sigo movido por conhecimento, fé e boas experiências.',
         },
       ],
       link: [

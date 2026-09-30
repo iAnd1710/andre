@@ -4,6 +4,6 @@ app:
   buildType: 'static'
   deployPath: '.output/public'
   deployEntry: '.output/public/index.html'
-  title: 'André | Projetos e links'
-  description: 'Projetos, ideias e links de André — engenharia, dados e inteligência artificial.'
+  title: 'André · Transformo ideias em produtos'
+  description: 'Na Apptime, criamos produtos de IA para ajudar negócios a crescer. Fora do trabalho, sigo movido por conhecimento, fé e boas experiências.'
   keywords: 'Apptime, Nuxt.js, TypeScript, Tailwind CSS'
