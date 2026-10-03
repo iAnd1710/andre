@@ -12,7 +12,7 @@ const projects = [
   {
     name: 'Cathedra',
     description: 'Os fundamentos da fé católica, de forma clara.',
-    href: 'https://cathedra.appti.me/?utm_source=andre',
+    href: 'https://cathedra.cc/?utm_source=andre',
     image: 'https://storage.googleapis.com/storage.apptime.app/public/artifacts/FDP96qto1qDR4VnVAtgT/imgHd.png',
     tone: 'cathedra',
   },
