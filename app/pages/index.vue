@@ -13,7 +13,7 @@ const projects = [
     name: 'Cathedra',
     description: 'Os fundamentos da fé católica, de forma clara.',
     href: 'https://cathedra.cc/?utm_source=andre',
-    image: 'https://storage.googleapis.com/storage.apptime.app/public/artifacts/FDP96qto1qDR4VnVAtgT/imgHd.png',
+    image: 'https://storage.googleapis.com/storage.apptime.app/public/artifacts/eD1peP2LPrgmIWDqFySj/imgHd.png',
     tone: 'cathedra',
   },
   {
